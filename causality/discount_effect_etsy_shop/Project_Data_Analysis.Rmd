@@ -140,31 +140,41 @@ Covariate Balance checks that other factors of sales stays in similar level acro
 t.test(as.numeric(d_age[1,2:8]),
        as.numeric(d_age[1,9:15]), paired = TRUE)
 wilcox.test(as.numeric(d_age[1,2:8]),
-            as.numeric(d_age[1,9:15]), paired = TRUE)
+            as.numeric(d_age[1,9:15]), 
+            paired = TRUE,
+            conf.int = TRUE)
 
 # Check balance cont1 v.s. treat of age group 15-34
 t.test(as.numeric(d_age[2,2:8]),
        as.numeric(d_age[2,9:15]), paired = TRUE)
 wilcox.test(as.numeric(d_age[2,2:8]),
-            as.numeric(d_age[2,9:15]), paired = TRUE)
+            as.numeric(d_age[2,9:15]),
+            paired = TRUE,
+            conf.int = TRUE)
 
 # Check balance cont1 v.s. treat of age group 35-44
 t.test(as.numeric(d_age[3,2:8]),
        as.numeric(d_age[3,9:15]), paired = TRUE)
 wilcox.test(as.numeric(d_age[3,2:8]),
-            as.numeric(d_age[3,9:15]), paired = TRUE)
+            as.numeric(d_age[3,9:15]), 
+            paired = TRUE,
+            conf.int = TRUE)
 
 # Check balance cont1 v.s. treat of age group 45-54
 t.test(as.numeric(d_age[4,2:8]),
        as.numeric(d_age[4,9:15]), paired = TRUE)
 wilcox.test(as.numeric(d_age[4,2:8]),
-            as.numeric(d_age[4,9:15]), paired = TRUE)
+            as.numeric(d_age[4,9:15]), 
+            paired = TRUE,
+            conf.int = TRUE)
 
 # Check balance cont1 v.s. treat of all age groups
 t.test(as.numeric(d_age[5,2:8]),
        as.numeric(d_age[5,9:15]), paired = TRUE)
 wilcox.test(as.numeric(d_age[5,2:8]),
-            as.numeric(d_age[5,9:15]), paired = TRUE)
+            as.numeric(d_age[5,9:15]), 
+            paired = TRUE,
+            conf.int = TRUE)
 
 
 ## -----Contorl week 2 V.s. Treatment Week-----
@@ -173,31 +183,41 @@ wilcox.test(as.numeric(d_age[5,2:8]),
 t.test(as.numeric(d_age[1,16:22]),
        as.numeric(d_age[1,9:15]), paired = TRUE)
 wilcox.test(as.numeric(d_age[1,16:22]),
-            as.numeric(d_age[1,9:15]), paired = TRUE)
+            as.numeric(d_age[1,9:15]), 
+            paired = TRUE,
+            conf.int = TRUE)
 
 # Check balance cont2 v.s. treat of age group 25-34
 t.test(as.numeric(d_age[2,16:22]),
        as.numeric(d_age[2,9:15]), paired = TRUE)
 wilcox.test(as.numeric(d_age[2,16:22]),
-            as.numeric(d_age[2,9:15]), paired = TRUE)
+            as.numeric(d_age[2,9:15]), 
+            paired = TRUE,
+            conf.int = TRUE)
 
 # Check balance cont2 v.s. treat of age group 35-44
 t.test(as.numeric(d_age[3,16:22]),
        as.numeric(d_age[3,9:15]), paired = TRUE)
 wilcox.test(as.numeric(d_age[3,16:22]),
-            as.numeric(d_age[3,9:15]), paired = TRUE)
+            as.numeric(d_age[3,9:15]), 
+            paired = TRUE,
+            conf.int = TRUE)
 
 # Check balance cont2 v.s. treat of age group 45-54
 t.test(as.numeric(d_age[4,16:22]),
        as.numeric(d_age[4,9:15]), paired = TRUE)
 wilcox.test(as.numeric(d_age[4,16:22]),
-            as.numeric(d_age[4,9:15]), paired = TRUE)
+            as.numeric(d_age[4,9:15]), 
+            paired = TRUE,
+            conf.int = TRUE)
 
 # Check balance cont2 v.s. treat of all age groups
 t.test(as.numeric(d_age[5,16:22]),
        as.numeric(d_age[5,9:15]), paired = TRUE)
 wilcox.test(as.numeric(d_age[5,16:22]),
-            as.numeric(d_age[5,9:15]), paired = TRUE)
+            as.numeric(d_age[5,9:15]), 
+            paired = TRUE,
+            conf.int = TRUE)
 
 
 ## -----Contorl week 2 V.s. Control Week 1-----
@@ -206,31 +226,41 @@ wilcox.test(as.numeric(d_age[5,16:22]),
 t.test(as.numeric(d_age[1,16:22]),
        as.numeric(d_age[1,2:8]), paired = TRUE)
 wilcox.test(as.numeric(d_age[1,16:22]),
-            as.numeric(d_age[1,2:8]), paired = TRUE)
+            as.numeric(d_age[1,2:8]), 
+            paired = TRUE,
+            conf.int = TRUE)
 
 # Check balance cont2 v.s. cont1 of age group 25-34
 t.test(as.numeric(d_age[2,16:22]),
        as.numeric(d_age[2,2:8]), paired = TRUE)
 wilcox.test(as.numeric(d_age[2,16:22]),
-            as.numeric(d_age[2,2:8]), paired = TRUE)
+            as.numeric(d_age[2,2:8]), 
+            paired = TRUE,
+            conf.int = TRUE)
 
 # Check balance cont2 v.s. cont1 of age group 35-44
 t.test(as.numeric(d_age[3,16:22]),
        as.numeric(d_age[3,2:8]), paired = TRUE)
 wilcox.test(as.numeric(d_age[3,16:22]),
-            as.numeric(d_age[3,2:8]), paired = TRUE)
+            as.numeric(d_age[3,2:8]), 
+            paired = TRUE,
+            conf.int = TRUE)
 
 # Check balance cont2 v.s. cont1 of age group 45-54
 t.test(as.numeric(d_age[4,16:22]),
        as.numeric(d_age[4,2:8]), paired = TRUE)
 wilcox.test(as.numeric(d_age[4,16:22]),
-            as.numeric(d_age[4,2:8]), paired = TRUE)
+            as.numeric(d_age[4,2:8]), 
+            paired = TRUE,
+            conf.int = TRUE)
 
 # Check balance cont2 v.s. cont1 of age group 45-54
 t.test(as.numeric(d_age[5,16:22]),
        as.numeric(d_age[5,2:8]), paired = TRUE)
 wilcox.test(as.numeric(d_age[5,16:22]),
-            as.numeric(d_age[5,2:8]), paired = TRUE)
+            as.numeric(d_age[5,2:8]), 
+            paired = TRUE,
+            conf.int = TRUE)
 
 # Plot the age group day by day during the Control 1 week
 plot(c(1:7),d_age[1,2:8],
@@ -292,33 +322,78 @@ From the aggregated data on day level, we see that number of web sessions per ea
 
 ```{r}
 ## -----Control 1 v.s. Treatment-----
+t.test(as.numeric(d_gender[1,2:8]),
+            as.numeric(d_gender[1,9:15]), 
+            paired = TRUE)
 wilcox.test(as.numeric(d_gender[1,2:8]),
-            as.numeric(d_gender[1,9:15]), paired = TRUE)
+            as.numeric(d_gender[1,9:15]), 
+            paired = TRUE,
+            conf.int = TRUE)
+t.test(as.numeric(d_gender[2,2:8]),
+            as.numeric(d_gender[2,9:15]), 
+            paired = TRUE)
 wilcox.test(as.numeric(d_gender[2,2:8]),
-            as.numeric(d_gender[2,9:15]), paired = TRUE)
+            as.numeric(d_gender[2,9:15]), 
+            paired = TRUE,
+            conf.int = TRUE)
+t.test(as.numeric(d_gender[3,2:8]),
+            as.numeric(d_gender[3,9:15]), 
+            paired = TRUE)
 wilcox.test(as.numeric(d_gender[3,2:8]),
-            as.numeric(d_gender[3,9:15]), paired = TRUE)
+            as.numeric(d_gender[3,9:15]), 
+            paired = TRUE,
+            conf.int = TRUE)
 #cont1_gender_comp <- c(rep(0,sum(d_gender[1,2:8])), rep(1,sum(d_gender[2,2:8])))
 #treat_gender_comp <- c(rep(0,sum(d_gender[1,9:15])), rep(1,sum(d_gender[2,9:15])))
 #t.test(cont1_gender_comp, treat_gender_comp)
 
 ## -----Control 2 v.s. Treatment-----
+t.test(as.numeric(d_gender[1,16:22]),
+            as.numeric(d_gender[1,9:15]), 
+            paired = TRUE)
 wilcox.test(as.numeric(d_gender[1,16:22]),
-            as.numeric(d_gender[1,9:15]), paired = TRUE)
+            as.numeric(d_gender[1,9:15]), 
+            paired = TRUE,
+            conf.int = TRUE)
+t.test(as.numeric(d_gender[2,16:22]),
+            as.numeric(d_gender[2,9:15]), 
+            paired = TRUE)
 wilcox.test(as.numeric(d_gender[2,16:22]),
-            as.numeric(d_gender[2,9:15]), paired = TRUE)
+            as.numeric(d_gender[2,9:15]), 
+            paired = TRUE,
+            conf.int = TRUE)
+t.test(as.numeric(d_gender[3,16:22]),
+            as.numeric(d_gender[3,9:15]), 
+            paired = TRUE)
 wilcox.test(as.numeric(d_gender[3,16:22]),
-            as.numeric(d_gender[3,9:15]), paired = TRUE)
+            as.numeric(d_gender[3,9:15]), 
+            paired = TRUE,
+            conf.int = TRUE)
 #cont2_gender_comp <- c(rep(0,sum(d_gender[1,16:22])), rep(1,sum(d_gender[2,16:22])))
 #t.test(cont2_gender_comp, treat_gender_comp)
 
 ## -----Control 2 v.s. Control 1-----
+t.test(as.numeric(d_gender[1,16:22]),
+            as.numeric(d_gender[1,2:8]), 
+            paired = TRUE)
 wilcox.test(as.numeric(d_gender[1,16:22]),
-            as.numeric(d_gender[1,2:8]), paired = TRUE)
+            as.numeric(d_gender[1,2:8]), 
+            paired = TRUE,
+            conf.int = TRUE)
+t.test(as.numeric(d_gender[2,16:22]),
+            as.numeric(d_gender[2,2:8]), 
+            paired = TRUE)
 wilcox.test(as.numeric(d_gender[2,16:22]),
-            as.numeric(d_gender[2,2:8]), paired = TRUE)
+            as.numeric(d_gender[2,2:8]), 
+            paired = TRUE,
+            conf.int = TRUE)
+t.test(as.numeric(d_gender[3,16:22]),
+            as.numeric(d_gender[3,2:8]), 
+            paired = TRUE)
 wilcox.test(as.numeric(d_gender[3,16:22]),
-            as.numeric(d_gender[3,2:8]), paired = TRUE)
+            as.numeric(d_gender[3,2:8]), 
+            paired = TRUE,
+            conf.int = TRUE)
 #t.test(cont1_gender_comp, cont2_gender_comp)
 
 ## Plot the distribution of gender for Control 1 week
@@ -373,36 +448,57 @@ The following section test the covariate balance for web session origin countrie
 ```{r}
 ## Control 1 v.s. Treatment
 common_country <- intersect(d_country_cont1$Country,d_country_treat$Country)
-country_cont1 <- subset(d_country_cont1, d_country_cont1$Country %in% common_country)
-country_treat <- subset(d_country_treat, d_country_treat$Country %in% common_country)
+country_cont1 <- subset(d_country_cont1, 
+                        d_country_cont1$Country %in% common_country)
+country_treat <- subset(d_country_treat, 
+                        d_country_treat$Country %in% common_country)
 country_cont1 <- country_cont1[order(country_cont1$Country),1:2]
 country_treat <- country_treat[order(country_treat$Country),1:2]
 country <- cbind(country_cont1,country_treat$Sessions)
 names(country) <- c("Country", "Sess.control1", "Sess.treat")
-wilcox.test(country$Sess.control1,country$Sess.treat, paired = T)
-t.test(country$Sess.control1,country$Sess.treat, paired = T)
+wilcox.test(country$Sess.control1,
+            country$Sess.treat, 
+            paired = T,
+            conf.int = TRUE)
+t.test(country$Sess.control1,
+       country$Sess.treat, 
+       paired = T)
 
 ## Treatment v.s. Control 2 
 common_country <- intersect(d_country_cont2$Country,d_country_treat$Country)
-country_cont2 <- subset(d_country_cont2, d_country_cont2$Country %in% common_country)
-country_treat <- subset(d_country_treat, d_country_treat$Country %in% common_country)
+country_cont2 <- subset(d_country_cont2, 
+                        d_country_cont2$Country %in% common_country)
+country_treat <- subset(d_country_treat, 
+                        d_country_treat$Country %in% common_country)
 country_cont2 <- country_cont2[order(country_cont2$Country),1:2]
 country_treat <- country_treat[order(country_treat$Country),1:2]
 country <- cbind(country_cont2,country_treat$Sessions)
 names(country) <- c("Country", "Sess.control2", "Sess.treat")
-wilcox.test(country$Sess.control2,country$Sess.treat, paired = T)
-t.test(country$Sess.control2,country$Sess.treat, paired = T)
+wilcox.test(country$Sess.control2,
+            country$Sess.treat, 
+            paired = T,
+            conf.int = TRUE)
+t.test(country$Sess.control2,
+       country$Sess.treat, 
+       paired = T)
 
 ## Control 1 v.s. Control 2
 common_country <- intersect(d_country_cont1$Country,d_country_cont2$Country)
-country_cont1 <- subset(d_country_cont1, d_country_cont1$Country %in% common_country)
-country_cont2 <- subset(d_country_cont2, d_country_cont2$Country %in% common_country)
+country_cont1 <- subset(d_country_cont1, 
+                        d_country_cont1$Country %in% common_country)
+country_cont2 <- subset(d_country_cont2, 
+                        d_country_cont2$Country %in% common_country)
 country_cont1 <- country_cont1[order(country_cont1$Country),1:2]
 country_cont2 <- country_cont2[order(country_cont2$Country),1:2]
 country <- cbind(country_cont1,country_cont2$Sessions)
 names(country) <- c("Country", "Sess.control1", "Sess.control2")
-wilcox.test(country$Sess.control1,country$Sess.control2, paired = T)
-t.test(country$Sess.control1,country$Sess.control2, paired = T)
+wilcox.test(country$Sess.control1,
+            country$Sess.control2, 
+            paired = T,
+            conf.int = TRUE)
+t.test(country$Sess.control1,
+       country$Sess.control2, 
+       paired = T)
 ```
 
 We see that since the number of sessions across countries are very different, the distribution is not close to normal. Thus, a paired Wilcoxon test will yield better results. From that we see the country is balanced across the experimental weeks.
@@ -414,36 +510,57 @@ The following section test the covariate balance for the language of web session
 ```{r}
 ## Control 1 v.s. Treatment
 common_lang <- intersect(d_lang_cont1$Language,d_lang_treat$Language)
-lang_cont1 <- subset(d_lang_cont1, d_lang_cont1$Language %in% common_lang)
-lang_treat <- subset(d_lang_treat, d_lang_treat$Language %in% common_lang)
+lang_cont1 <- subset(d_lang_cont1, 
+                     d_lang_cont1$Language %in% common_lang)
+lang_treat <- subset(d_lang_treat, 
+                     d_lang_treat$Language %in% common_lang)
 lang_cont1 <- lang_cont1[order(lang_cont1$Language),1:2]
 lang_treat <- lang_treat[order(lang_treat$Language),1:2]
 lang <- cbind(lang_cont1,lang_treat$Sessions)
 names(lang) <- c("Language", "Sess.control1", "Sess.treat")
-wilcox.test(lang$Sess.control1,lang$Sess.treat, paired = T)
-t.test(lang$Sess.control1,lang$Sess.treat, paired = T)
+wilcox.test(lang$Sess.control1,
+            lang$Sess.treat, 
+            paired = T,
+            conf.int = TRUE)
+t.test(lang$Sess.control1,
+       lang$Sess.treat, 
+       paired = T)
 
 ## Treatment v.s. Control 2
 common_lang <- intersect(d_lang_cont2$Language,d_lang_treat$Language)
-lang_cont2 <- subset(d_lang_cont2, d_lang_cont2$Language %in% common_lang)
-lang_treat <- subset(d_lang_treat, d_lang_treat$Language %in% common_lang)
+lang_cont2 <- subset(d_lang_cont2, 
+                     d_lang_cont2$Language %in% common_lang)
+lang_treat <- subset(d_lang_treat, 
+                     d_lang_treat$Language %in% common_lang)
 lang_cont2 <- lang_cont2[order(lang_cont2$Language),1:2]
 lang_treat <- lang_treat[order(lang_treat$Language),1:2]
 lang <- cbind(lang_cont2,lang_treat$Sessions)
 names(lang) <- c("Language", "Sess.control2", "Sess.treat")
-wilcox.test(lang$Sess.control2,lang$Sess.treat, paired = T)
-t.test(lang$Sess.control2,lang$Sess.treat, paired = T)
+wilcox.test(lang$Sess.control2,
+            lang$Sess.treat, 
+            paired = T,
+            conf.int = TRUE)
+t.test(lang$Sess.control2,
+       lang$Sess.treat, 
+       paired = T)
 
 ## Control 1 v.s. Control 2
 common_lang <- intersect(d_lang_cont1$Language,d_lang_cont2$Language)
-lang_cont1 <- subset(d_lang_cont1, d_lang_cont1$Language %in% common_lang)
-lang_cont2 <- subset(d_lang_cont2, d_lang_cont2$Language %in% common_lang)
+lang_cont1 <- subset(d_lang_cont1, 
+                     d_lang_cont1$Language %in% common_lang)
+lang_cont2 <- subset(d_lang_cont2, 
+                     d_lang_cont2$Language %in% common_lang)
 lang_cont1 <- lang_cont1[order(lang_cont1$Language),1:2]
 lang_cont2 <- lang_cont2[order(lang_cont2$Language),1:2]
 lang <- cbind(lang_cont1,lang_cont2$Sessions)
 names(lang) <- c("Language", "Sess.control1", "Sess.control2")
-wilcox.test(lang$Sess.control1,lang$Sess.control2, paired = T)
-t.test(lang$Sess.control1,lang$Sess.control2, paired = T)
+wilcox.test(lang$Sess.control1,
+            lang$Sess.control2, 
+            paired = T,
+            conf.int = TRUE)
+t.test(lang$Sess.control1,
+       lang$Sess.control2, 
+       paired = T)
 ```
 
 The comparison of control 2 and treatment shows a smaller p value (significant under 0.05 for Wilcoxon paired test). However, because again by comparing all the possible combinations, we are performing a multiple comparison, the critical p value should be several times smaller than 0.05. Thus, this level of significance shouldn't be too worring.
@@ -488,7 +605,34 @@ SO$Returning_Customer <- as.numeric(SO$BuyerID %in% past_customer)
 SO$treat <- as.numeric(SO$Date > "2017-03-19" & SO$Date < "2017-03-27")
 ```
 
-### 3.1 Order Value
+### 3.1 Revenue and QTY of items sold
+
+```{r}
+## Sales Summary
+sales_summary <- data.frame(
+  week=c("C1","TR","C2"),
+  revenue=c(sum(SO_cont1$OrderValue),
+            sum(SO_treat$OrderValue),
+            sum(SO_cont2$OrderValue)),
+  nrorders=c(length(SO_cont1$OrderID),
+             length(SO_treat$OrderID),
+             length(SO_cont2$OrderID)),
+  qty=c(sum(SO_cont1$NrItems),
+        sum(SO_treat$NrItems),
+        sum(SO_cont2$NrItems)
+  )
+)
+sales_summary
+
+## QTY of items sold per item price group
+qty_treat <- c(47,0,4,4,0)
+qty_cont1 <- c(23,0,1,4,1)
+qty_cont2 <- c(12,0,4,1,1)
+wilcox.test(qty_treat, qty_cont1, paired = T)
+wilcox.test(qty_treat, qty_cont2, paired = T)
+```
+
+### 3.2 Order Value
 
 Control 1 v.s. Treatment Sales Order Value Comparison
 
@@ -496,13 +640,14 @@ Control 1 v.s. Treatment Sales Order Value Comparison
 ## average effect on order value of treatment v.s. control 1
 SO_cont1_treat <- SO[SO$Date > "2017-03-12" & SO$Date < "2017-03-27",]
 m1_ordervalue <- lm(OrderValue~treat, data=SO_cont1_treat)
-summary(m1_ordervalue)
+# summary(m1_ordervalue)
 m1_ordervalue$vcov <- vcov(m1_ordervalue)
-coeftest(m1_ordervalue, m1_ordervalue$vcov)
-# non-parametric test
+coeftest(m1_ordervalue, cov=vcov)
+## t-test
+t.test(SO_cont1$OrderValue,SO_treat$OrderValue)
+## non-parametric test
 wilcox.test(SO_cont1$OrderValue,SO_treat$OrderValue)
-
-# ramdomization inference
+## ramdomization inference
 ate <- mean(SO_treat$OrderValue) - mean(SO_cont1$OrderValue)
 dist_sharpnull_ordervalue <- rep(0,10000)
 for (i in 1:10000) {
@@ -511,20 +656,22 @@ for (i in 1:10000) {
     mean(SO_cont1_treat[treat==0,]$OrderValue)
 }
 plot(density(dist_sharpnull_ordervalue), 
-     main="Dist. of order value effect under Sharp Null")
+     main="Sharp null hypothesis dist. of Sales (TR vs C1)")
 abline(v=ate, col="red")
 mean(abs(dist_sharpnull_ordervalue)>=abs(ate)) # p value
+sd(dist_sharpnull_ordervalue) # standard error from sharp null
 
-
-# Controlling for returning customer
+## Controlling for returning customer
 m2_ordervalue <- lm(OrderValue~treat+Returning_Customer, 
                     data=SO_cont1_treat)
-summary(m2_ordervalue)
+# summary(m2_ordervalue)
 m2_ordervalue$vcov <- vcov(m2_ordervalue)
 coeftest(m2_ordervalue, m2_ordervalue$vcov)
 m3_ordervalue <- lm(OrderValue~treat+Returning_Customer+treat*Returning_Customer, 
                     data=SO_cont1_treat)
-summary(m3_ordervalue)
+# summary(m3_ordervalue)
+m3_ordervalue$vcov <- vcov(m3_ordervalue)
+coeftest(m3_ordervalue, m3_ordervalue$vcov)
 ```
 
 ```{r, results='asis'}
@@ -541,13 +688,14 @@ Treatment v.s. Control 2 Sales Order Value Comparison
 ## average effect on order value of treatment v.s. control 2
 SO_treat_cont2 <- SO[SO$Date > "2017-03-19" & SO$Date < "2017-04-02",]
 m4_ordervalue <- lm(OrderValue~treat, data=SO_treat_cont2)
-summary(m4_ordervalue)
+# summary(m4_ordervalue)
 m4_ordervalue$vcov <- vcov(m4_ordervalue)
 coeftest(m4_ordervalue, m4_ordervalue$vcov)
-# non-parametric test
+## t-test
+t.test(SO_cont2$OrderValue,SO_treat$OrderValue)
+## non-parametric test
 wilcox.test(SO_cont2$OrderValue,SO_treat$OrderValue)
-
-# ramdomization inference
+## ramdomization inference
 ate <- mean(SO_treat$OrderValue) - mean(SO_cont2$OrderValue)
 dist_sharpnull_ordervalue <- rep(0,10000)
 for (i in 1:10000) {
@@ -556,20 +704,22 @@ for (i in 1:10000) {
     mean(SO_treat_cont2[treat==0,]$OrderValue)
 }
 plot(density(dist_sharpnull_ordervalue), 
-     main="Dist. of order value effect under Sharp Null")
+     main="Sharp null hypothesis dist. of Sales (TR vs C2)")
 abline(v=ate, col="red")
 mean(abs(dist_sharpnull_ordervalue)>=abs(ate)) # p value
+sd(dist_sharpnull_ordervalue) # standard error from sharp null
 
-
-# Controlling for returning customer
+## Controlling for returning customer
 m5_ordervalue <- lm(OrderValue~treat+Returning_Customer, 
                     data=SO_treat_cont2)
-summary(m5_ordervalue)
+# summary(m5_ordervalue)
 m5_ordervalue$vcov <- vcov(m5_ordervalue)
 coeftest(m5_ordervalue, m5_ordervalue$vcov)
 m6_ordervalue <- lm(OrderValue~treat+Returning_Customer+treat*Returning_Customer, 
                     data=SO_treat_cont2)
-summary(m6_ordervalue)
+# summary(m6_ordervalue)
+m6_ordervalue$vcov <- vcov(m6_ordervalue)
+coeftest(m6_ordervalue, m6_ordervalue$vcov)
 ```
 
 ```{r, results='asis'}
@@ -590,12 +740,26 @@ m7_ordervalue <- lm(OrderValue~Returning_Customer, data=SO_cont1_cont2)
 summary(m7_ordervalue)
 m7_ordervalue$vcov <- vcov(m7_ordervalue)
 coeftest(m7_ordervalue, m7_ordervalue$vcov)
-# non-parametric test
+## non-parametric test
 wilcox.test(SO_cont2$OrderValue,SO_treat$OrderValue)
 ```
 
+SO Estimate across Weeks
 
-## 3.2 Price per Unique Item per Order
+```{r}
+SO_summary <- data.frame(
+  week=c("C1","TR","C2"),
+  SO=c(mean(SO_cont1$OrderValue),
+       mean(SO_treat$OrderValue),
+       mean(SO_cont2$OrderValue)),
+  nrorders=c(length(SO_cont1$OrderID),
+             length(SO_treat$OrderID),
+             length(SO_cont2$OrderID))
+  )
+SO_summary
+```
+
+## 3.3 Price per Unique Item per Order
 
 ```{r}
 ## Control 1 v.s. Treatment
@@ -618,10 +782,10 @@ for (i in 1:10000){
   dist[i] <- mean(SOI_price[treatment==1,]$price)-
           mean(SOI_price[treatment==0,]$price)
 }
-plot(density(dist), main="sharp null hypothesis dist")
+plot(density(dist), main="Sharp null hypothesis dist. of Sales (TR vs C1)")
 abline(v=ate,col="red")
-pval <- mean(abs(ate)<=abs(dist))
-sum(abs(dist)>=abs(ate))/length(dist)
+mean(abs(ate)<=abs(dist)) # p-value
+sd(dist) # standard error from sharp null
 
 ##===================================================================================
 
@@ -644,10 +808,10 @@ for (i in 1:10000){
   dist[i] <- mean(SOI_price[treatment==1,]$price)-
           mean(SOI_price[treatment==0,]$price)
 }
-plot(density(dist), main="sharp null hypothesis dist")
+plot(density(dist), main="Sharp null hypothesis dist. of Sales (TR vs C2)")
 abline(v=ate,col="red")
-pval <- mean(abs(ate)<=abs(dist))
-sum(abs(dist)>=abs(ate))/length(dist)
+mean(abs(ate)<=abs(dist)) # p-value
+sd(dist) # standard error from sharp null
 
 ##===================================================================================
 
@@ -670,10 +834,10 @@ for (i in 1:10000){
   dist[i] <- mean(SOI_price[treatment==1,]$price)-
           mean(SOI_price[treatment==0,]$price)
 }
-plot(density(dist), main="sharp null hypothesis dist")
+plot(density(dist), main="Baseline Sales Comparison (C1 vs C2)")
 abline(v=ate,col="red")
-pval <- mean(abs(ate)<=abs(dist))
-sum(abs(dist)>=abs(ate))/length(dist)
+mean(abs(ate)<=abs(dist)) # p-value
+sd(dist) # standard error from sharp null
 ```
 
 The following section performs the same test as Sales Order Value comparison, but using SOI data and aggregate by the order ID. This is just a double check to make sure both approaches yields same result.
@@ -694,9 +858,10 @@ t.test(SO_Value[SO_Value$treat==1,]$OrderValue,SO_Value[SO_Value$treat==0,]$Orde
 ```
 
 
-### 3.3 Sales value per Buyer
+### 3.4 Sales Value per Buyer / Order Value per Buyer (OVB)
 
 ```{r}
+## Control 1 v.s. Treatment
 SVB_treat <- aggregate(x=SO_treat$OrderValue,by=list(SO_treat$BuyerID), FUN=sum)
 SVB_cont1 <- aggregate(x=SO_cont1$OrderValue,by=list(SO_cont1$BuyerID), FUN=sum)
 SVB <- rbind(SVB_treat,SVB_cont1)
@@ -708,15 +873,35 @@ for (i in 1:100000){
   treatment <- sample(treat)
   dist[i] <- mean(SVB$x[treatment==1])-mean(SVB$x[treatment==0])
 }
-plot(density(dist), main="sharp null hypothesis dist")
+plot(density(dist), main="Sharp null hypothesis dist. of Sales (TR vs C1)")
 abline(v=ate, col="red")
 sum(abs(dist)>=abs(ate))/length(dist)
+sd(dist)
 hist(SVB$x)
+
+## Treatment v.s. Control 2
+SVB_treat <- aggregate(x=SO_treat$OrderValue,by=list(SO_treat$BuyerID), FUN=sum)
+SVB_cont2 <- aggregate(x=SO_cont2$OrderValue,by=list(SO_cont2$BuyerID), FUN=sum)
+SVB <- rbind(SVB_treat,SVB_cont2)
+t.test(SVB_treat$x,SVB_cont2$x)
+ate <- mean(SVB_treat$x) - mean(SVB_cont2$x)
+treat <- c(rep(1,length(SVB_treat$x)),rep(0,length(SVB_cont2$x)))
+dist <- rep(0,100000)
+for (i in 1:100000){
+  treatment <- sample(treat)
+  dist[i] <- mean(SVB$x[treatment==1])-mean(SVB$x[treatment==0])
+}
+plot(density(dist), main="Sharp null hypothesis dist. of Sales (TR vs C2)")
+abline(v=ate, col="red")
+sum(abs(dist)>=abs(ate))/length(dist)
+sd(dist)
+hist(SVB$x, breaks=10)
 ```
 
-### 3.4 Sales Quantity per Buyer
+### 3.5 Sales Quantity per Buyer
 
 ```{r}
+## Contrl 1 v.s. Treatment
 SQB_treat <- aggregate(x=SO_treat$NrItems,by=list(SO_treat$BuyerID), FUN=sum)
 SQB_cont1 <- aggregate(x=SO_cont1$NrItems,by=list(SO_cont1$BuyerID), FUN=sum)
 SQB <- rbind(SQB_treat,SQB_cont1)
@@ -728,13 +913,32 @@ for (i in 1:100000){
   treatment <- sample(treat)
   dist[i] <- mean(SQB$x[treatment==1])-mean(SQB$x[treatment==0])
 }
-plot(density(dist), main="sharp null hypothesis dist")
+plot(density(dist), main="Sharp null hypothesis dist. of Sales (TR vs C1)")
 abline(v=ate, col="red")
-sum(abs(dist)>=abs(ate))/length(dist)
+sum(abs(dist)>=abs(ate))/length(dist) # p-value
+sd(dist) # standard error
+hist(SQB$x)
+
+## Treatment v.s. Control 2
+SQB_treat <- aggregate(x=SO_treat$NrItems,by=list(SO_treat$BuyerID), FUN=sum)
+SQB_cont2 <- aggregate(x=SO_cont2$NrItems,by=list(SO_cont2$BuyerID), FUN=sum)
+SQB <- rbind(SQB_treat,SQB_cont2)
+t.test(SQB_treat$x,SQB_cont2$x)
+ate <- mean(SQB_treat$x) - mean(SQB_cont2$x)
+treat <- c(rep(1,length(SQB_treat$x)),rep(0,length(SQB_cont2$x)))
+dist <- rep(0,100000)
+for (i in 1:100000){
+  treatment <- sample(treat)
+  dist[i] <- mean(SQB$x[treatment==1])-mean(SQB$x[treatment==0])
+}
+plot(density(dist), main="Sharp null hypothesis dist. of Sales (TR vs C2)")
+abline(v=ate, col="red")
+sum(abs(dist)>=abs(ate))/length(dist)# p-value
+sd(dist) # standard error
 hist(SQB$x)
 ```
 
-### 3.5 Conversion Rate
+### 3.6 Conversion Rate
 
 ```{r}
 nrsession_cont1 <- sum(session_control1$Sessions)
@@ -750,15 +954,51 @@ conversion_treat <- c(rep(0, nrsession_treat-nrorder_treat) ,
 conversion_cont2 <- c(rep(0, nrsession_cont2-nrorder_cont2) ,
                       rep(1,nrorder_cont2) )
 
+## Control 1 v.s. Treatment
+conversion <- c(conversion_cont1,conversion_treat)
 t.test(conversion_cont1,conversion_treat)
 wilcox.test(conversion_cont1,conversion_treat)
+ate <- mean(conversion_treat)-mean(conversion_cont1)
+treat <- c(rep(0,length(conversion_cont1)),
+           rep(1,length(conversion_treat)))
+dist <- rep(0,100000)
+for (i in 1:100000){
+  treatment <- sample(treat)
+  dist[i] <- mean(conversion[treatment==1])-mean(conversion[treatment==0])
+}
+plot(density(dist),
+     main="Sharp null hypothesis dist. of Conversion Rate (TR vs C1)")
+abline(v=ate, col="red")
+sum(abs(dist)>=abs(ate))/length(dist)# p-value
+sd(dist) # standard error
+
+
+## Treatment v.s. Control 2
+conversion <- c(conversion_cont2,conversion_treat)
 t.test(conversion_cont2,conversion_treat)
 wilcox.test(conversion_cont2,conversion_treat)
+ate <- mean(conversion_treat)-mean(conversion_cont2)
+treat <- c(rep(0,length(conversion_cont2)),
+           rep(1,length(conversion_treat)))
+dist <- rep(0,100000)
+for (i in 1:100000){
+  treatment <- sample(treat)
+  dist[i] <- mean(conversion[treatment==1])-mean(conversion[treatment==0])
+}
+plot(density(dist),
+     main="Sharp null hypothesis dist. of Conversion Rate (TR vs C2)")
+abline(v=ate, col="red")
+sum(abs(dist)>=abs(ate))/length(dist)# p-value
+sd(dist) # standard error
+
+
+## Control 1 v.s. Control 2 - Baseline check
+mean(conversion_cont1)-mean(conversion_cont2)
 t.test(conversion_cont1,conversion_cont2)
 wilcox.test(conversion_cont1,conversion_cont2)
 ```
 
-### 3.6 Overall Revenue Compared to Past Half Year
+### 3.7 Overall Revenue Compared to Past Half Year
 
 ```{r}
 max(SO$Date)-min(SO$Date)
@@ -794,16 +1034,16 @@ points(29,week_qty[3], pch = 20, col = "orange")
 points(c(30,28),week_qty[c(2,4)], pch = 20, col = "blue")
 ```
 
-## Summary
+## 4. Summary
 
-* Average Order Value is NOT significant across treatment and control weeks.
+* Differences in Sales Order Value (SO) is NOT significant across treatment and control weeks.
 
-* Sales Value per Buyer and Sales QTY per Buyer are both NOT significant. 
+* Differences in Order Value per Buyer (OVB) and Order QTY per Buyer (OQB) are both NOT significant.  
 
-* Sales per Unique Item per Order IS significant. The lower value in treatment week marks that customers tends to buy lower value items during the treatment is offered.
+* Differences in Sales per Unique Item per Order (SIO) IS significant. The lower value in treatment week marks that customers tends to buy lower value items during the treatment is offered.
 
-* Conversion Rate is NOT significant. The average across the weeks are similar, marking the no effect of treatment on the likelihood of transforming web sessions into purchases.
-
-* Regression shows a Heterogeneous Treatment Effect among returning customers comparing control 1 to treatment week. Although test is highly significant, the results were mostly driven by small number of returning customers. This effect needs further study focusing on gathering more returning customer subject base to confirm. 
+* Differences in Conversion Rate is NOT significant. The average across the weeks are similar, marking the no effect of treatment on the likelihood of transforming web sessions into purchases.
 
 * Overall sales and qty sold shows higher in treatment week compared to pre-treatment and post-treatment weeks. The obvious drop in control 2 week indicates a intertemporal substitution effect after treatment is ended. Comparing to revenue during the past 6 months, treatment week is lower than average. However, there seems to be a sales fluctuation pattern across the months, so we cannot just compare treatment week against past 6 months to draw causal estimate. More trustworthy, comparing treatment week to the past month span shows that treatment week is truely higher while controlling for the monthly fluctuations.
+
+* Regression shows a Heterogeneous Treatment Effect among returning customers comparing control 1 to treatment week. Although test is highly significant, the results were mostly driven by small number of returning customers. This effect needs further study focusing on gathering more returning customer subject base to confirm. 
